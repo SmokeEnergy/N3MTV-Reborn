@@ -775,6 +775,7 @@ DELETE FROM `skin`;
 
 -- Export de la structure de la table version_partage. users
 CREATE TABLE IF NOT EXISTS `users` (
+   `id` int(3) UNSIGNED ZEROFILL NOT NULL auto_increment primary key,
   `identifier` varchar(255) CHARACTER SET utf8mb4 NOT NULL DEFAULT '',
   `group` varchar(50) NOT NULL DEFAULT 'user',
   `permission_level` int(11) NOT NULL DEFAULT 0,
